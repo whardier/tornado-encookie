@@ -27,7 +27,6 @@ setup(
         'Operating System :: OS Independent',
         'Development Status :: 1 - Planning',
         'Environment :: Plugins',
-        'Framework :: Tornado',
         'Intended Audience :: Developers',
         'Intended Audience :: Information Technology',
         'License :: OSI Approved :: MIT License',
