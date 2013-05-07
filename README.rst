@@ -25,32 +25,32 @@ Example
 
 Handler
 
-```python
-from tornadoencookie.encookie import EncookieMixin
+.. code:: python
 
-
-class MyHandler(tornado.web.RequestHandler, EncookieMixin):
-    def get(self):
-        #Get a cookie
-        self.encookie.get_cookie('hello')
-
-        #Get a secure cookie
-        self.encookie.get_secure_cookie('hello')
-
-        #Set a regular cookie
-        self.encookie.set_cookie('hi', 'there')
-        
-        #Set a secure cookie
-        self.encookie.set_secure_cookie('hello', 'Timmy')
-```
+    from tornadoencookie.encookie import EncookieMixin
+    
+    class MyHandler(tornado.web.RequestHandler, EncookieMixin):
+        def get(self):
+            #Get a cookie
+            self.encookie.get_cookie('hello')
+    
+            #Get a secure cookie
+            self.encookie.get_secure_cookie('hello')
+    
+            #Set a regular cookie
+            self.encookie.set_cookie('hi', 'there')
+            
+            #Set a secure cookie
+            self.encookie.set_secure_cookie('hello', 'Timmy')
 
 Configuration
 
-```python
-application = tornado.web.Application([
-    (r'/', MyHandler),
-], **{
-    'encookie_secret': 'iamthecookiemons',
-    },
-)
-```
+.. code:: python
+
+    application = tornado.web.Application([
+        (r'/', MyHandler),
+    ], **{
+        'encookie_secret': 'iamthecookiemons',
+        },
+    )
+    

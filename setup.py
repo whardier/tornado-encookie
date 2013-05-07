@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 import tornadoencookie
 
-with open('README.md') as stream:
+with open('README.rst') as stream:
   long_desc = stream.read()
 
 setup(
