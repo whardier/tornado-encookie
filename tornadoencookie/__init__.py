@@ -3,7 +3,7 @@
 
 """tornado-encookie"""
 
-__name__ = "tornadoencookie"
+__name__ = "tornado-encookie"
 __author__ = 'Shane R. Spencer'
 __email__ = "shane@bogomip.com"
 __license__ = 'None'
